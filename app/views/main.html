@@ -1,0 +1,15 @@
+<div class="background">
+  <h1>Stay Groovy!</h1>
+  <div id="button" class="groovy-button">Groovy!</div>
+  <div class="nick">Yo Nick! Thanks for the idea, fam!</div>
+</div>
+
+<script>
+  
+  $('#button').click(function(){
+    var groovy = new Audio('/audio/groovy.mp3');
+
+    groovy.play();
+    return false;
+  });
+</script>

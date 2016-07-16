@@ -1,0 +1,68 @@
+@import 'bootstrap.scss';
+// bower:scss
+// endbower
+@import 'https://fonts.googleapis.com/css?family=Creepster|Righteous';
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.background {
+  background: url('/images/bruce.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+}
+
+.background h1 {
+  margin: 120px 0;
+  color: #fff;
+  font-size: 42pt;
+  text-align: center;
+  font-family: 'Righteous', cursive;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #000000;
+}
+
+.groovy-button {
+  color: #ffffff;
+  border: 8px solid #f00;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  line-height: 292px;
+  margin: 0px auto;
+  font-family: 'Creepster', cursive;
+  font-size: 28pt;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  background: #000000;
+  box-shadow: inset 30px 30px 50px 6px #111;
+}
+
+.groovy-button:hover {
+  background: #030303;
+  box-shadow: inset 30px 30px 50px 6px #131313;
+}
+
+.groovy-button:active {
+  background: #000000;
+  box-shadow: inset 30px 30px 50px 6px #0e0e0e;
+}
+
+.nick {
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* Responsive: Portrait smartphones and below */
+@media screen and (max-width: 428px) {
+  .background h1 {
+    margin: 30px 0;
+  }
+}
